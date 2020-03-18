@@ -39,6 +39,6 @@ public class ReciveService {
         //参数2 接收消息以后是否将消息从队列中移除 建议使用true 当消息处理完成后会自动的清空被处理过的消息，
         // 可以实现解决消息被重复消费的问题
         //参数3 设定由哪个消费监听消息
-        channel.basicConsume("myQueues", consumer);
+        channel.basicConsume("myQueues",true, consumer);
     }
 }
