@@ -19,14 +19,14 @@ import java.util.concurrent.TimeoutException;
 public class SendService {
     public static void main(String[] args) throws IOException, TimeoutException {
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("");  //设置主机ip
+        factory.setHost("ip");  //设置主机ip
         //设置端口
-        //factory.setPort(5672);
+        factory.setPort(5672);
         //设置用户名
         //todo 需要修改用户名和密码
-        factory.setUsername("");
+        factory.setUsername("用户名");
         //设置密码
-        factory.setPassword("");
+        factory.setPassword("密码");
 
         //创建链接
         Connection connection = factory.newConnection();
