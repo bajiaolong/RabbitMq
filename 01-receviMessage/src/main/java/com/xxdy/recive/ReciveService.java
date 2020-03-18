@@ -17,10 +17,10 @@ public class ReciveService {
 
     public static void main(String[] args) throws IOException, TimeoutException {
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("47.100.2.138");
+        factory.setHost("");
         factory.setPort(5672);
-        factory.setUsername("root");
-        factory.setPassword("123456");
+        factory.setUsername("");
+        factory.setPassword("");
 
         Connection connection = factory.newConnection();
         Channel channel = connection.createChannel();
